@@ -1,4 +1,4 @@
-const app = require('./index.js');
+const app = require('.');
 app.post('/api/login', function (req, res) {
   if (req.body.password === process.env.ADMIN_PW && req.body.username === process.env.ADMIN_UN) {
     req.session.isAdmin = true;

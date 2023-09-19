@@ -1,4 +1,4 @@
-const app = require('./index.js');
+const app = require('.');
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer');
 const stripe = require("stripe")(process.env.STRIPE_KEY);
