@@ -99,7 +99,7 @@ app.post('/order/pay', async function (req, res) {
       description: 'Charge for phone lasso test',
     });
     sendEmail(order.status, orderBody)
-    res.json(order);
+    return res.json(order);
   } catch (err) {
     console.log(err)
     res.status(500).send(err);
@@ -114,7 +114,7 @@ app.post('/order/update', async function (req, res) {
 
     await OrderModel.findByIdAndUpdate(orderBody._id, orderBody)
     sendEmail(orderBody.status, orderBody)
-    res.json(orderBody)
+    return res.json(orderBody)
   } catch (err) {
     console.log(err);
   }
@@ -123,10 +123,10 @@ app.post('/order/update', async function (req, res) {
 
 app.get('/orders/all', async function (req, res) {
   let orders = await OrderModel.find()
-  res.json(orders)
+  return res.json(orders)
 });
 
 app.get('/orders/:status', async function (req, res) {
   let orders = await OrderModel.find({ status: req.params.status })
-  res.json(orders)
+  return res.json(orders)
 });

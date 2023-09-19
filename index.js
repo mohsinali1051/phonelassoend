@@ -50,21 +50,21 @@ app.use(bodyParser.json());
 app.get('/product-info/:id', function (req, res) {
   stripe.skus.list({ product: req.params.id },
     function (err, product) {
-      err ? res.status(500).send(err) : res.json(product);
+     return err ? res.status(500).send(err) : res.json(product);
     });
 });
 
 app.get('/product-info/', function (req, res) {
   stripe.skus.list(
     function (err, skus) {
-      err ? res.status(500).send(err) : res.json(skus.data);
+      return err ? res.status(500).send(err) : res.json(skus.data);
     });
 });
 
 app.use(express.static(path.join(__dirname, '.', 'build')));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '.', 'build', 'index.html'));
+  return res.sendFile(path.resolve(__dirname, '.', 'build', 'index.html'));
 });
 
 app.listen(process.env.PORT, function () {
