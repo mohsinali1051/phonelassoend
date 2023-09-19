@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: {{ config.colors.secondary.main }};
+            height: 60px;
+        }
+
+        .logo {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .logo img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .content {
+            padding: 30px;
+            height: 458px;
+        }
+
+        h1 {
+            font-weight: 300;
+            font-size: 28px;
+            margin: 0 0 20px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            font-size: 14px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .totals {
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+
+        .totals table {
+            width: 100%;
+        }
+
+        .totals .total {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="logo">
+        <img src="https://phonelasso.net/image/phone-lasso.png" alt="Your Logo" style="max-width: 200px; margin-bottom: 20px;">
+        </div>
+        <div class="content">
+            <h1>Order Confirmation</h1>
+            <p>Thanks for your order with Phone Lasso!</p>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                {{#each items }}
+                <tr>
+                    <td>{{this.name}}</td>
+                    <td>{{ this.quantity }}x</td>
+                    <td>${{ this.price }}</td>
+                </tr>
+                {{/each}}
+            </table>
+            <div class="totals">
+                <table>
+                   
+                    <tr>
+                        <td>Shipping</td>
+                        <td>{{ order_shipping }}</td>
+                    </tr>
+                    <tr class="total">
+                        <td>Total</td>
+                        <td>{{ order_total }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; {{ current_year }} {{ config.store_name }}. All rights reserved.
+    </div>
+</body>
+
+</html>
+
+
+
+
+

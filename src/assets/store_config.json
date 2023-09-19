@@ -1,0 +1,335 @@
+{
+  "store_name": "My Awesome Store",
+  "store_slug": "react-stripe-store",
+  "api_key": "pk_test_iU9zmRENuEsrRFW3GaJUp089",
+  "colors": {
+    "primary": {
+      "main": "#FF6A64",
+      "dark": "#BF4F4B",
+      "contrastText": "#FFF"
+    },
+    "secondary": {
+      "main": "#ffffff"
+    }
+  },
+  "products": [
+    {
+      "name": "Phone Lasso Kit Black",
+      "url": "phone-lasso-kit",
+      "price": 14.95,
+      "stripe_id": "{'price_1NYxGXFtezS8Z8bWJpu13PqD'}",
+      "description": "Replacing your phone is expensive – and being disconnected from your world is stressful! The Phone Lasso’s rugged strength and durability allows you to take on life’s daily adventures with a simple peel, stick, click",
+      "photos": [
+        "https://phonelasso.net/images2/black%20kit/1.png",
+        "https://phonelasso.net/images2/black%20kit/2.jpg",
+        "https://phonelasso.net/images2/black%20kit/3.png",
+        "https://phonelasso.net/images2/black%20kit/4.jpg",
+        "https://phonelasso.net/images2/black%20kit/5.jpg",
+        "https://phonelasso.net/images2/black%20kit/6.JPG",
+        "https://phonelasso.net/images2/black%20kit/7.JPG",
+        "https://phonelasso.net/images2/black%20kit/8.jpg",
+        "https://phonelasso.net/images2/black%20kit/9.jpg",
+        "https://phonelasso.net/images2/black%20kit/10.jpg",
+        "https://phonelasso.net/images2/black%20kit/11.jpg"
+
+
+
+      ],
+      "details": [
+        "Keeps your device safe from drops, dunks & loss",
+        "Universal for all cell phones and cases",
+        "Includes adjustable neck lanyard and wristlet for hands-free action",
+        "Metal carabiner hooks to belt loops, purses, bags, and gear",
+        "Easily removable from all materials"
+      ],
+      "info_tab": "Includes 1 branded patch with aluminum carabiner, 1 refill patch with aluminum carabiner, adjustable neck-length lanyard, adjustable wristlet lanyard. ",
+      "questions": [
+        {
+          "question": "What if I only want to use the Phone Lasso when I’m boating or hiking or skiing?",
+          "answer": "No worries! Simply peel off the patch when you’re done with it. Just be sure to get some replacement patches so you have plenty on hand for your next great adventure!"
+        },
+        {
+          "question": "What if someone yanks it – isn’t it dangerous?",
+          "answer": "We thought of that, too, that’s why we use a breakaway ball adjuster. This allows the lanyard to pull through the ball, keeping you safe."
+        },
+        {
+          "question": "Is the patch really strong enough?",
+          "answer": "Dude … the patch is insanely sticky. It’s made with military-grade rip stop nylon, too. It’s a super strong, tiny little patch. That picture with the 15lb weight? It’s the real deal."
+        },
+        {
+          "question": "Do I have to attach the patch directly to my phone? Can it attach to the case?",
+          "answer": "You can attach the Phone Lasso patch to the back of your smartphone, the back of your case or the inside of your case. Whichever way works best for you. If you apply the patch to the inside of your cell phone case, all you need to do is feed it through the charger hole so you can attach the carabiner."
+        },
+        {
+          "question": "Will the glue mess up my phone?",
+          "answer": "Our proprietary patch is made with an adhesive that leaves no residue or film when it’s fully removed. On some materials, the patch will come right off. On others, just roll up the adhesive until it is gone."
+        },
+        {
+          "question": "Does Phone Lasso only work on phones?",
+          "answer": "Heck no! Phone Lassos keep anything you need within reach close by. Some uses we’ve seen include TV remote controls, video game controllers, wearable medical devices, mp3 players and more. If you’ve come up with a cool use for Phone Lasso, give us a shout! We’d love to hear about it."
+        },
+        {
+          "question": "I already have a shatterproof case. Why would I need a Phone Lasso, too?",
+          "answer": "Phone Lasso wrangles your phone. It keeps it close at hand whenever you need it. Not only will it help you protect your phone from breakage, but you won’t have to worry about flushing it away, dropping it in the river, forgetting it at the checkout or any of the other thousands of ways people lose and damage their phones."
+        },
+        {
+          "question": "Do you really think people will wear the phones?",
+          "answer": "Um … yes. Have you heard of the Apple Watch or Google Glass? We love being connected, whether that means being able to text, snap a pic or share our location. Wearing our devices is the trend of the future. Be on the cutting edge – keep your smartphone close so you can capture life’s adventures."
+        }
+      ]
+    },
+    {
+      "name": "Phone Lasso Kit White",
+      "url": "white-kit",
+      "stripe_id": "{'price_1NYxGXFtezS8Z8bWJpu13PqD'}",
+      "price": 14.95,
+      "description": "Replacing your phone is expensive – and being disconnected from your world is stressful! The Phone Lasso Refill Patch's rugged strength and durability allows you to take on life’s daily adventures with a simple peel, stick, click.",
+      "photos": [
+        "https://phonelasso.net/images2/white%20kit/1w.png",
+        "https://phonelasso.net/images2/white%20kit/2.jpg",
+        "https://phonelasso.net/images2/white%20kit/3.jpg",
+        "https://phonelasso.net/images2/white%20kit/4.jpg",
+        "https://phonelasso.net/images2/white%20kit/5.jpg",
+        "https://phonelasso.net/images2/white%20kit/6.jpg",
+        "https://phonelasso.net/images2/white%20kit/7.JPG",
+        "https://phonelasso.net/images2/white%20kit/8.JPG",
+        "https://phonelasso.net/images2/white%20kit/9.jpg",
+        "https://phonelasso.net/images2/white%20kit/10.jpg",
+        "https://phonelasso.net/images2/white%20kit/11.jpg"
+
+
+
+
+      ],
+      "details": [
+        "Keeps your device safe from drops, dunks & loss",
+        "Universal for all cell phones and cases",
+        "Includes adjustable neck lanyard and wristlet for hands-free action",
+        "Metal carabiner hooks to belt loops, purses, bags, and gear",
+        "Easily removable from all materials"
+      ],
+      "info_tab": "Includes 1 super-sticky replacement patch with metal carabiner. Purchase options include white patch with silver carabiner and black patch with black carabiner, branded with the Phone Lasso logo or blank.",
+      "questions": [
+        {
+          "question": "Why do I need replacement patches?",
+          "answer": "If you only want to use your Phone Lasso during certain activities, its smart to have spare patches handy. Use your Phone Lasso for skiing, hiking or boating, and then simply peel the patch off. When it’s time for your next big adventure, you’ll have a replacement patch ready for action!"
+        },
+        {
+          "question": "Is the patch really strong enough?",
+          "answer": " Dude… the patch is insanely sticky. It’s made with military-grade rip stop nylon, too. It’s a super strong, tiny little patch. That picture with the 15lb weight? It’s the real deal."
+        },
+        {
+          "question": "Do I have to attach the patch directly to my phone? Can it attach to the case?",
+          "answer": "You can attach the Phone Lasso patch to the back of your smartphone, the back of your case or the inside of your case. Whichever way works best for you. If you apply the patch to the inside of your cell phone case, all you need to do is feed it through the charger hole so you can attach the carabiner."
+        },
+        {
+          "question": "Will the glue mess up my phone?",
+          "answer": "Our proprietary patch is made with an adhesive that leaves no residue or film when it’s fully removed. On some materials, the patch will come right off. On others, just roll up the adhesive until it is gone. If there is any left, use a cotton ball with a bit of baby oil or olive oil to remove the rest."
+        }
+      ]
+    },
+    {
+      "name": "White Patch Refills",
+      "url": "patch-refills",
+      "stripe_id": "{'price_1NYxGXFtezS8Z8bWJpu13PqD'}",
+      "price": 18.95,
+      "description": "Replacing your phone is expensive – and being disconnected from your world is stressful! The Phone Lasso Refill Patch's rugged strength and durability allows you to take on life’s daily adventures with a simple peel, stick, click.",
+      "photos": [
+        "https://phonelasso.net/images2/white%20patches/1.jpg",
+        "https://phonelasso.net/images2/white%20patches/2.jpg",
+        "https://phonelasso.net/images2/white%20patches/3.jpg",
+        "https://phonelasso.net/images2/white%20patches/4.jpg",
+        "https://phonelasso.net/images2/white%20patches/5.png",
+        "https://phonelasso.net/images2/white%20patches/6.png",
+        "https://phonelasso.net/images2/white%20patches/7.png",
+        "https://phonelasso.net/images2/white%20patches/8.jpg",
+        "https://phonelasso.net/images2/white%20patches/9.png",
+        "https://phonelasso.net/images2/white%20patches/10.jpg",
+        "https://phonelasso.net/images2/white%20patches/11.jpg",
+        "https://phonelasso.net/images2/white%20patches/12.jpg"
+
+      ],
+      "details": [
+        "Keeps your device safe from drops, dunks & loss",
+        "Universal for all cell phones and cases",
+        "Includes adjustable neck lanyard and wristlet for hands-free action",
+        "Metal carabiner hooks to belt loops, purses, bags, and gear",
+        "Easily removable from all materials"
+      ],
+      "info_tab": "Includes 1 super-sticky replacement patch with metal carabiner. Purchase options include white patch with silver carabiner and black patch with black carabiner, branded with the Phone Lasso logo or blank.",
+      "questions": [
+        {
+          "question": "Why do I need replacement patches?",
+          "answer": "If you only want to use your Phone Lasso during certain activities, its smart to have spare patches handy. Use your Phone Lasso for skiing, hiking or boating, and then simply peel the patch off. When it’s time for your next big adventure, you’ll have a replacement patch ready for action!"
+        },
+        {
+          "question": "Is the patch really strong enough?",
+          "answer": " Dude… the patch is insanely sticky. It’s made with military-grade rip stop nylon, too. It’s a super strong, tiny little patch. That picture with the 15lb weight? It’s the real deal."
+        },
+        {
+          "question": "Do I have to attach the patch directly to my phone? Can it attach to the case?",
+          "answer": "You can attach the Phone Lasso patch to the back of your smartphone, the back of your case or the inside of your case. Whichever way works best for you. If you apply the patch to the inside of your cell phone case, all you need to do is feed it through the charger hole so you can attach the carabiner."
+        },
+        {
+          "question": "Will the glue mess up my phone?",
+          "answer": "Our proprietary patch is made with an adhesive that leaves no residue or film when it’s fully removed. On some materials, the patch will come right off. On others, just roll up the adhesive until it is gone. If there is any left, use a cotton ball with a bit of baby oil or olive oil to remove the rest."
+        }
+      ]
+    },
+    {
+      "name": "Black Patch Refills",
+      "url": "black-patch",
+      "stripe_id": "{'price_1NYxGXFtezS8Z8bWJpu13PqD'}",
+      "price": 18.95,
+      "description": "Replacing your phone is expensive – and being disconnected from your world is stressful! The Phone Lasso Refill Patch's rugged strength and durability allows you to take on life’s daily adventures with a simple peel, stick, click.",
+      "photos": [
+        "https://www.phonelasso.com/wp-content/uploads/triple-pack-black.jpg",
+        "https://phonelasso.net/images2/white%20patches/7.png",
+        "https://phonelasso.net/images2/white%20patches/3.jpg",
+        "https://phonelasso.net/images2/white%20patches/4.jpg",
+        "https://phonelasso.net/images2/white%20patches/5.png",
+        "https://phonelasso.net/images2/white%20patches/6.png",
+        "https://phonelasso.net/images2/white%20patches/2.jpg",
+        "https://phonelasso.net/images2/white%20patches/8.jpg",
+        "https://phonelasso.net/images2/white%20patches/9.png",
+        "https://phonelasso.net/images2/white%20patches/10.jpg",
+        "https://phonelasso.net/images2/white%20patches/11.jpg",
+        "https://phonelasso.net/images2/white%20patches/12.jpg"      ],
+      "details": [
+        "Keeps your device safe from drops, dunks & loss",
+        "Universal for all cell phones and cases",
+        "Includes adjustable neck lanyard and wristlet for hands-free action",
+        "Metal carabiner hooks to belt loops, purses, bags, and gear",
+        "Easily removable from all materials"
+      ],
+      "info_tab": "Includes 1 super-sticky replacement patch with metal carabiner. Purchase options include white patch with silver carabiner and black patch with black carabiner, branded with the Phone Lasso logo or blank.",
+      "questions": [
+        {
+          "question": "Why do I need replacement patches?",
+          "answer": "If you only want to use your Phone Lasso during certain activities, its smart to have spare patches handy. Use your Phone Lasso for skiing, hiking or boating, and then simply peel the patch off. When it’s time for your next big adventure, you’ll have a replacement patch ready for action!"
+        },
+        {
+          "question": "Is the patch really strong enough?",
+          "answer": " Dude… the patch is insanely sticky. It’s made with military-grade rip stop nylon, too. It’s a super strong, tiny little patch. That picture with the 15lb weight? It’s the real deal."
+        },
+        {
+          "question": "Do I have to attach the patch directly to my phone? Can it attach to the case?",
+          "answer": "You can attach the Phone Lasso patch to the back of your smartphone, the back of your case or the inside of your case. Whichever way works best for you. If you apply the patch to the inside of your cell phone case, all you need to do is feed it through the charger hole so you can attach the carabiner."
+        },
+        {
+          "question": "Will the glue mess up my phone?",
+          "answer": "Our proprietary patch is made with an adhesive that leaves no residue or film when it’s fully removed. On some materials, the patch will come right off. On others, just roll up the adhesive until it is gone. If there is any left, use a cotton ball with a bit of baby oil or olive oil to remove the rest."
+        }
+      ]
+    },
+    {
+      "name": "Phone Lasso Standard Case",
+      "url": "phone-lasso-standard-case",
+      "stripe_id": "{'price_1NYxGXFtezS8Z8bWJpu13PqD'}",
+      "price": 284.90,
+      "description": "Replacing your phone is expensive – and being disconnected from your world is stressful! The Phone Lasso Refill Patch's rugged strength and durability allows you to take on life’s daily adventures with a simple peel, stick, click.",
+      "photos": [
+        "https://phonelasso.net/images2/standard%20case/1.jpg",
+        "https://phonelasso.net/images2/standard%20case/2.jpg",
+        "https://phonelasso.net/images2/standard%20case/3.jpg",
+        "https://phonelasso.net/images2/standard%20case/4.jpg"
+      ],
+      "details": [
+        "Keeps your device safe from drops, dunks & loss",
+        "Universal for all cell phones and cases",
+        "Includes adjustable neck lanyard and wristlet for hands-free action",
+        "Metal carabiner hooks to belt loops, purses, bags, and gear",
+        "Easily removable from all materials"
+      ],
+      "info_tab": "Includes 1 branded patch with aluminum carabiner, 1 refill patch with aluminum carabiner, adjustable neck-length lanyard, adjustable wristlet lanyard.",
+      "questions": [
+        {
+          "question": "What if I only want to use the Phone Lasso when I’m boating or hiking or skiing?",
+          "answer": "No worries! Simply peel off the patch when you’re done with it. Just be sure to get some replacement patches so you have plenty on hand for your next great adventure!"
+        },
+        {
+          "question": "What if someone yanks it – isn’t it dangerous?",
+          "answer": "We thought of that, too, that’s why we use a breakaway ball adjuster. This allows the lanyard to pull through the ball, keeping you safe."
+        },
+        {
+          "question": "Is the patch really strong enough?",
+          "answer": "Dude … the patch is insanely sticky. It’s made with military-grade rip stop nylon, too. It’s a super strong, tiny little patch. That picture with the 15lb weight? It’s the real deal."
+        },
+        {
+          "question": "Do I have to attach the patch directly to my phone? Can it attach to the case?",
+          "answer": "You can attach the Phone Lasso patch to the back of your smartphone, the back of your case or the inside of your case. Whichever way works best for you. If you apply the patch to the inside of your cell phone case, all you need to do is feed it through the charger hole so you can attach the carabiner."
+        },
+        {
+          "question": "Will the glue mess up my phone?",
+          "answer": "Our proprietary patch is made with an adhesive that leaves no residue or film when it’s fully removed. On some materials, the patch will come right off. On others, just roll up the adhesive until it is gone."
+        },
+        {
+          "question": "Does Phone Lasso only work on phones?",
+          "answer": "Heck no! Phone Lassos keep anything you need within reach close by. Some uses we’ve seen include TV remote controls, video game controllers, wearable medical devices, mp3 players and more. If you’ve come up with a cool use for Phone Lasso, give us a shout! We’d love to hear about it."
+        },
+        {
+          "question": "I already have a shatterproof case. Why would I need a Phone Lasso, too?",
+          "answer": "Phone Lasso wrangles your phone. It keeps it close at hand whenever you need it. Not only will it help you protect your phone from breakage, but you won’t have to worry about flushing it away, dropping it in the river, forgetting it at the checkout or any of the other thousands of ways people lose and damage their phones."
+        },
+        {
+          "question": "Do you really think people will wear the phones?",
+          "answer": "Um … yes. Have you heard of the Apple Watch or Google Glass? We love being connected, whether that means being able to text, snap a pic or share our location. Wearing our devices is the trend of the future. Be on the cutting edge – keep your smartphone close so you can capture life’s adventures."
+        }
+      ]
+    },
+    {
+      "name": "Phone Lasso Master Case",
+      "url": "phone-master-kit",
+      "price": 1445.49,
+      "stripe_id": "{'price_1NYxGXFtezS8Z8bWJpu13PqD'}",
+      "description": "Replacing your phone is expensive – and being disconnected from your world is stressful! The Phone Lasso’s rugged strength and durability allows you to take on life’s daily adventures with a simple peel, stick, click",
+      "photos": [
+        "https://phonelasso.net/images2/master%20case/1.jpg",
+        "https://phonelasso.net/images2/master%20case/2.jpg",
+        "https://phonelasso.net/images2/master%20case/3.jpg",
+        "https://phonelasso.net/images2/master%20case/4.jpg"      ],
+      "details": [
+        "Keeps your device safe from drops, dunks & loss",
+        "Universal for all cell phones and cases",
+        "Includes adjustable neck lanyard and wristlet for hands-free action",
+        "Metal carabiner hooks to belt loops, purses, bags, and gear",
+        "Easily removable from all materials"
+      ],
+      "info_tab": "Includes 6 Standard Cases",
+      "questions": [
+        {
+          "question": "What if I only want to use the Phone Lasso when I’m boating or hiking or skiing?",
+          "answer": "No worries! Simply peel off the patch when you’re done with it. Just be sure to get some replacement patches so you have plenty on hand for your next great adventure!"
+        },
+        {
+          "question": "What if someone yanks it – isn’t it dangerous?",
+          "answer": "We thought of that, too, that’s why we use a breakaway ball adjuster. This allows the lanyard to pull through the ball, keeping you safe."
+        },
+        {
+          "question": "Is the patch really strong enough?",
+          "answer": "Dude … the patch is insanely sticky. It’s made with military-grade rip stop nylon, too. It’s a super strong, tiny little patch. That picture with the 15lb weight? It’s the real deal."
+        },
+        {
+          "question": "Do I have to attach the patch directly to my phone? Can it attach to the case?",
+          "answer": "You can attach the Phone Lasso patch to the back of your smartphone, the back of your case or the inside of your case. Whichever way works best for you. If you apply the patch to the inside of your cell phone case, all you need to do is feed it through the charger hole so you can attach the carabiner."
+        },
+        {
+          "question": "Will the glue mess up my phone?",
+          "answer": "Our proprietary patch is made with an adhesive that leaves no residue or film when it’s fully removed. On some materials, the patch will come right off. On others, just roll up the adhesive until it is gone."
+        },
+        {
+          "question": "Does Phone Lasso only work on phones?",
+          "answer": "Heck no! Phone Lassos keep anything you need within reach close by. Some uses we’ve seen include TV remote controls, video game controllers, wearable medical devices, mp3 players and more. If you’ve come up with a cool use for Phone Lasso, give us a shout! We’d love to hear about it."
+        },
+        {
+          "question": "I already have a shatterproof case. Why would I need a Phone Lasso, too?",
+          "answer": "Phone Lasso wrangles your phone. It keeps it close at hand whenever you need it. Not only will it help you protect your phone from breakage, but you won’t have to worry about flushing it away, dropping it in the river, forgetting it at the checkout or any of the other thousands of ways people lose and damage their phones."
+        },
+        {
+          "question": "Do you really think people will wear the phones?",
+          "answer": "Um … yes. Have you heard of the Apple Watch or Google Glass? We love being connected, whether that means being able to text, snap a pic or share our location. Wearing our devices is the trend of the future. Be on the cutting edge – keep your smartphone close so you can capture life’s adventures."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+/* Banner.css */
+.cart-button {
+    background-color: #ff6a64; /* Add your desired background color here */
+    color: white !important;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
