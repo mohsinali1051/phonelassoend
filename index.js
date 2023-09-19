@@ -24,48 +24,48 @@ connectDb();
 app.use(helmet());
 app.use(cookieParser());
 
-var sess = {
-  secret: process.env.SESSION_SECRET,
-  cookie: {
-    maxAge: 24 * 60 * 60 * 1000,
-    secure: false
-  },
-  resave: false,
-  saveUninitialized: true,
-}
+// var sess = {
+//   secret: process.env.SESSION_SECRET,
+//   cookie: {
+//     maxAge: 24 * 60 * 60 * 1000,
+//     secure: false
+//   },
+//   resave: false,
+//   saveUninitialized: true,
+// }
 
-if (app.get('env') === 'production') {
-  app.set('trust proxy', 1);
-  sess.cookie.secure = true;
-}
+// if (app.get('env') === 'production') {
+//   app.set('trust proxy', 1);
+//   sess.cookie.secure = true;
+// }
 
-app.use(session(sess))
+// app.use(session(sess))
 
-if (result.error) throw result.error;
+// if (result.error) throw result.error;
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
-app.get('/product-info/:id', function (req, res) {
-  stripe.skus.list({ product: req.params.id },
-    function (err, product) {
-      if (err) {
-        console.error("Stripe SKU list error:", err);
-        return res.status(500).send(err);
-      }
-      res.json(product);
-    });
-});
+// app.get('/product-info/:id', function (req, res) {
+//   stripe.skus.list({ product: req.params.id },
+//     function (err, product) {
+//       if (err) {
+//         console.error("Stripe SKU list error:", err);
+//         return res.status(500).send(err);
+//       }
+//       res.json(product);
+//     });
+// });
 
-app.get('/product-info/', function (req, res) {
-  stripe.skus.list(
-    function (err, skus) {
-      if (err) {
-        console.error("Stripe SKU list error:", err);
-        return res.status(500).send(err);
-      }
-      res.json(skus.data);
-    });
-});
+// app.get('/product-info/', function (req, res) {
+//   stripe.skus.list(
+//     function (err, skus) {
+//       if (err) {
+//         console.error("Stripe SKU list error:", err);
+//         return res.status(500).send(err);
+//       }
+//       res.json(skus.data);
+//     });
+// });
 
 // app.use(express.static(path.join(__dirname, '.', 'build')));
 
