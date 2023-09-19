@@ -4,7 +4,6 @@ const nodemailer = require('nodemailer');
 const stripe = require("stripe")(process.env.STRIPE_KEY);
 const Email = require('email-templates');
 app.use(bodyParser.json());
-const config = require('./src/assets/store_config.json');
 const OrderModel = require('./models/Order.js');
 const Counter = require('./models/Counter.js');
 
