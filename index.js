@@ -7,8 +7,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const stripe = require("stripe")(process.env.STRIPE_KEY);
 const mongoose = require('mongoose');
-const morgan=require("morgan")
-app.use(morgan('tiny'));
+
 const app = module.exports = express();
 
 const connectDb = async () => {
@@ -68,11 +67,15 @@ app.get('/product-info/', function (req, res) {
     });
 });
 
-app.use(express.static(path.join(__dirname, '.', 'build')));
+// app.use(express.static(path.join(__dirname, '.', 'build')));
 
-app.get('*', (req, res) => {
-  return res.sendFile(path.resolve(__dirname, '.', 'build', 'index.html'));
-});
+// app.get('*', (req, res) => {
+//   return res.sendFile(path.resolve(__dirname, '.', 'build', 'index.html'));
+// });
+
+app.get("/",(req,res)=>{
+  res.send("hello")
+})
 
 const PORT = process.env.PORT || 5000;
 
