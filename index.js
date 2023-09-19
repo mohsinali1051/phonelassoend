@@ -6,21 +6,21 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const path = require('path');
 const stripe = require("stripe")(process.env.STRIPE_KEY);
+const mongoose = require('mongoose');
+const morgan=require("morgan")
+app.use(morgan('tiny'));
 const app = module.exports = express();
 
-const mongoose = require('mongoose');
-
 const connectDb = async () => {
-  try {
-       
+  try {       
     await mongoose.connect(process.env.MONGO_URI);
-    console.log("Connected successfully");
+    console.log("Connected successfully to MongoDB");
   } catch (err) {
-    console.log(err)
+    console.error("MongoDB connection error:", err);
   }
 }
 
-connectDb()
+connectDb();
 
 app.use(helmet());
 app.use(cookieParser());
@@ -43,22 +43,28 @@ if (app.get('env') === 'production') {
 app.use(session(sess))
 
 if (result.error) throw result.error;
-require(__dirname + '/orders.js');
-require(__dirname + '/admin.js');
 
 app.use(bodyParser.json());
 
 app.get('/product-info/:id', function (req, res) {
   stripe.skus.list({ product: req.params.id },
     function (err, product) {
-     return err ? res.status(500).send(err) : res.json(product);
+      if (err) {
+        console.error("Stripe SKU list error:", err);
+        return res.status(500).send(err);
+      }
+      res.json(product);
     });
 });
 
 app.get('/product-info/', function (req, res) {
   stripe.skus.list(
     function (err, skus) {
-      return err ? res.status(500).send(err) : res.json(skus.data);
+      if (err) {
+        console.error("Stripe SKU list error:", err);
+        return res.status(500).send(err);
+      }
+      res.json(skus.data);
     });
 });
 
@@ -68,6 +74,8 @@ app.get('*', (req, res) => {
   return res.sendFile(path.resolve(__dirname, '.', 'build', 'index.html'));
 });
 
-app.listen(process.env.PORT, function () {
-  console.log("Listening on port 5000!");
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, function () {
+  console.log("Listening on port", PORT);
 });
