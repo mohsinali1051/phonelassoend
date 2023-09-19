@@ -46,8 +46,8 @@ sess.cookie.secure = true
 app.use(session(sess))
 
 // if (result.error) throw result.error;
-require(__dirname + '/orders.js');
-require(__dirname + '/admin.js');
+require('./orders.js');
+require('./admin.js');
 
 app.use(bodyParser.json());
 
