@@ -46,8 +46,8 @@ sess.cookie.secure = true
 app.use(session(sess))
 
 // if (result.error) throw result.error;
-require('./orders.js');
-require('./admin.js');
+require(__dirname+'/orders.js');
+require(__dirname+'/admin.js');
 
 app.use(bodyParser.json());
 
@@ -65,10 +65,10 @@ app.get('/product-info/', function (req, res) {
     });
 });
 
-app.use(express.static(path.join(__dirname, '..', 'build')));
+app.use(express.static(path.join(__dirname, '.', 'build')));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '..', 'build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, '.', 'build', 'index.html'));
 });
 
 app.listen(5000, function () {
