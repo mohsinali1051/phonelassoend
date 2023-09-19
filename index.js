@@ -67,15 +67,12 @@ app.use(cookieParser());
 //     });
 // });
 
-// app.use(express.static(path.join(__dirname, '.', 'build')));
+app.use(express.static(path.join(__dirname, '.', 'build')));
 
-// app.get('*', (req, res) => {
-//   return res.sendFile(path.resolve(__dirname, '.', 'build', 'index.html'));
-// });
+app.get('*', (req, res) => {
+  return res.sendFile(path.resolve(__dirname, '.', 'build', 'index.html'));
+});
 
-app.get("/",(req,res)=>{
-  res.send("hello")
-})
 
 const PORT = process.env.PORT || 5000;
 
