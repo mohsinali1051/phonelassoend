@@ -11,7 +11,6 @@ app.post('/api/login', function (req, res) {
     });
   }
 });
-
 app.get('/api/logout', function (req, res) {
   req.session.isAdmin = false;
   return res.redirect("/login");

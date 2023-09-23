@@ -37,40 +37,26 @@ var sess = {
 
 app.set('trust proxy', 1);
 sess.cookie.secure = true
-
-// if (app.get('env') === 'production') {
-//   app.set('trust proxy', 1);
-//   sess.cookie.secure = true;
-// }
-
 app.use(session(sess))
-
-// if (result.error) throw result.error;
 require(__dirname+'/orders.js');
 require(__dirname+'/admin.js');
-
 app.use(bodyParser.json());
-
 app.get('/product-info/:id', function (req, res) {
   stripe.skus.list({ product: req.params.id },
     function (err, product) {
       err ? res.status(500).send(err) : res.json(product);
     });
 });
-
 app.get('/product-info/', function (req, res) {
   stripe.skus.list(
     function (err, skus) {
       err ? res.status(500).send(err) : res.json(skus.data);
     });
 });
-
 app.use(express.static(path.join(__dirname, '.', 'build')));
-
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '.', 'build', 'index.html'));
 });
-
 app.listen(5000, function () {
   console.log("Listening on port 5000!");
 });

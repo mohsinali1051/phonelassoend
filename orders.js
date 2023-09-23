@@ -19,20 +19,39 @@ const getNextSequence = async (name) => {
   await ret.save();
   return ret.seq
 }
+// service: `${dotenv.parsed.Service}`,
+//   host: `${dotenv.parsed.Host}`,
+//   port: `${dotenv.parsed.Port}`,
+//   secure: `${dotenv.parsed.Secure}`,
+//   auth: {
+//     user:`${dotenv.parsed.mail_user}`,
+//     pass:`${dotenv.parsed.mail_pass}`// naturally, replace both with your real credentials or an application-specific password
+//   },
 
 
-let transporter = nodemailer.createTransport({
-  host: "127.0.0.1",
-  port: 1025,
-  secure: false, // true for 465, false for other ports
+// let transporter = nodemailer.createTransport({
+//   port: 1025,
+//   secure: false, // true for 465, false for other ports
+//   auth: {
+//     user: process.env.EMAIL_ADDRESS,
+//     pass: process.env.EMAIL_PASSWORD
+//   },
+//   tls: {
+//     rejectUnauthorized: false
+//   }
+// });
+const transporter = nodemailer.createTransport({
+  host: 'smtp.ethereal.email',
+  port: 587,
+  secure: false,
   auth: {
-    user: process.env.EMAIL_ADDRESS,
-    pass: process.env.EMAIL_PASSWORD
+      user: 'madisen.metz98@ethereal.email',
+      pass: 'PayAup7zCNkttF7Pf7'
   },
   tls: {
-    rejectUnauthorized: false
-  }
-});
+       rejectUnauthorized: false
+      }
+})
 
 
 
@@ -50,7 +69,7 @@ const email = new Email({
 });
 
 function sendEmail(status, order) {
-
+console.log(order)
   const time = new Date(order.createdAt);
   email
     .send({
@@ -74,6 +93,7 @@ function sendEmail(status, order) {
 app.post('/order/pay', async function (req, res) {
   try {
     const orderBody = req.body.orderBody
+    console.log(orderBody)
     orderBody.order_id = await getNextSequence("order_id_sequence")
     orderBody.status = "Ordered"
     const order = new OrderModel(req.body.orderBody)
